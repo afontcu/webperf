@@ -15,6 +15,14 @@
   <img src="cage.jpg">
 
   <script src="script.js"></script>
+
+  <!--
+    En aquest cas afegim dos recursos bloquejants: un arxiu CSS i un JS.
+    El DOMContentLoaded no es dispararà fins que els dos recursos s'hagin 
+    descarregat i parsejat: com que el script.js pot requerir el CSSOM, el 
+    navegador bloqueja el CSS fins que ha acabat de descarregar-se abans de 
+    processar el JS.
+   -->
 </body>
 
 </html>

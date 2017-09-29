@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EX5</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Hello world!</h1>
+  <img src="cage.jpg">
+
+  <script type="text/javascript">
+    const filePath = 'script.js'
+
+    const loadJSatOnload = () => {
+      var element = document.createElement('script')
+      element.src = filePath
+      document.body.appendChild(element)
+    }
+
+    window.addEventListener
+      ? window.addEventListener('load', loadJSatOnload)
+      : window.onload = loadJSatOnload
+  </script>
+
+  <!--
+    L'script anterior carrega l'arxiu .js un cop el DOM ha llançat
+    l'esdeveniment "load", de manera que l'arxiu no es carrega fins que
+    tot el document ha estat carregat.
+  -->
+</body>
+
+</html>

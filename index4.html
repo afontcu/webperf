@@ -20,13 +20,7 @@
     En canvi, afegir "async" a un <script> converteix l'script en no bloquejant,
     de manera que el navegador pot seguir parsejant el DOM sense esperar-lo.
 
-    En aquest cas, <script defer> generaria un resultat similar. La diferència
-    és que <script async> descarrega l'arxiu en paral·lel a la construcció del
-    DOM, i l'atura en el moment d'executar. Per altra banda, <script defer>
-    descarrega l'arxiu i no l'executa fins que l'HTML ha acabat de carregar.
-
-    Amb els arxius amb "defer" podem assegurar que s'executen en l'ordre que
-    apareixen al DOM.
+    No podem assegurar l'ordre d'execució els arxius amb atribut async.
    -->
 </body>
 
